@@ -1,15 +1,8 @@
-Copyright (c) 2016, gwitmond
-All rights reserved.
+This repository is a copy of the source of the net/textproto package of
+the golang package. As such, the license of this package is the BSD license
+by the golang Authors. See their golang source pacakage for their License file.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this
-  list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice,
-  this list of conditions and the following disclaimer in the documentation
-  and/or other materials provided with the distribution.
+My changes are not worth relicensing.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
