@@ -182,11 +182,11 @@ func (r *Reader) readCodeLine(expectCode int) (code int, continued bool, message
 }
 
 func parseCodeLine(line string, expectCode int) (code int, continued bool, message string, err error) {
-	if len(line) < 4 || line[3] != ' ' && line[3] != '-' {
+	if len(line) < 4 || line[3] != ' ' && line[3] != '-' && line[3] != '+' {
 		err = ProtocolError("short response: " + line)
 		return
 	}
-	continued = line[3] == '-'
+	continued = line[3] == '-' || line[3] == '+'
 	code, err = strconv.Atoi(line[0:3])
 	if err != nil || code < 100 {
 		err = ProtocolError("invalid response code: " + line)
